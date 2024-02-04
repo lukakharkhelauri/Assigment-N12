@@ -1,0 +1,75 @@
+body {
+  height: 100vh; /* Set body height to 100% of the viewport height */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure the pattern doesn't overflow the viewport */
+  position: relative; /* Make the body a relative container for absolute positioning */
+  background: url('/assets/images/bgpattern.svg') center top no-repeat; /* Set the background pattern */
+  background-size: cover; /* Make sure the pattern covers the top half of the viewport */
+}
+
+.faq-box {
+  max-width: 500px; /* Increase the max-width for a larger box */
+  padding: 30px; /* Increase the padding for more space inside the box */
+  border: 1px solid #ccc;
+  border-radius: 12px; /* Increase border-radius for rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly increase the box-shadow */
+  text-align: left;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  background-size: cover;
+
+  
+    .faq-title {
+      font-size: 28px; /* Increase the font size for the title */
+  font-weight: bold;
+  margin-bottom: 30px; /* Increase the margin for more separation */
+    }
+
+    .question-header {
+      display: flex;
+      align-items: center;
+    }
+  
+    .faq-question {
+      cursor: pointer;
+      margin-left: 15px; /* Increase the margin for more space between icon and text */
+      font-size: 18px; /* Increase the font size for the question text */
+      font-weight: bold;
+  
+      img {
+        margin-right: 10px;
+        max-width: 30px;
+      }
+  
+      .faq-question-btn {
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-weight: bold;
+        color: #000000;
+      }
+      
+      .toggle-icon {
+        cursor: pointer;
+        margin-left: 10px;
+        max-width: 20px;
+      }
+  
+      .faq-answer {
+        display: none;
+        margin-top: 15px; 
+        font-size: 16px;
+        color:gray;
+      }
+      
+      .visible {
+        display: block;
+      }
+    }
+  }
